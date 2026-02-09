@@ -1,17 +1,15 @@
 :root {
-    --wine-deep: #4a0e2e;
-    --wine-dark: #2d0a1f;
-    --rose-deep: #880e4f;
-    /* New darker pink */
-    --rose-dark: #ad1457;
-    --rose-main: #c2185b;
-    --rose-light: #ff80ab;
-    --pink-bright: #ff4081;
+    --purple-deep: #240046;
+    --purple-dark: #3c096c;
+    --purple-main: #5a189a;
+    --purple-light: #7b2cbf;
+    --purple-bright: #9d4edd;
+    --accent-light: #e0aaff;
     --border-light: rgba(255, 255, 255, 0.4);
     --border-shadow: rgba(0, 0, 0, 0.3);
     --text-white: #ffffff;
-    --text-gray: #f8bbd0;
-    --text-subtle: #f06292;
+    --text-gray: #e0aaff;
+    --text-subtle: #c77dff;
     --font-main: 'Outfit', sans-serif;
 }
 
@@ -36,8 +34,8 @@
 }
 
 body {
-    /* Darker pink gradient background */
-    background: linear-gradient(135deg, #2a0010, var(--wine-deep), var(--rose-deep), var(--rose-dark));
+    /* Purple gradient background */
+    background: linear-gradient(135deg, #10002b, var(--purple-deep), var(--purple-dark), var(--purple-main));
     background-size: 300% 300%;
     animation: gradientShift 10s ease infinite;
     color: var(--text-white);
@@ -161,7 +159,7 @@ h1 {
     left: 0;
     right: 0;
     height: 2px;
-    background: var(--pink-bright);
+    background: var(--purple-bright);
 }
 
 .tab:hover {
@@ -181,8 +179,8 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* Gradient: Left (Dark Pink) -> Right (Light Pink) */
-    background: linear-gradient(90deg, var(--rose-deep) 0%, var(--rose-light) 100%);
+    /* Gradient: Left (Dark Purple) -> Right (Light Purple/Violet) */
+    background: linear-gradient(90deg, var(--purple-main) 0%, var(--purple-light) 100%);
 
     /* Light border with depth */
     border: 1px solid var(--border-light);
@@ -231,11 +229,11 @@ h1 {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* Arrow: Dark Pink */
+/* Arrow: Deep Purple */
 .arrow-icon {
     font-size: 0.9rem;
-    color: #580836;
-    /* Very dark pink/wine for contrast against light right side */
+    color: #240046;
+    /* Very dark purple for contrast against light right side */
     transition: transform 0.2s ease;
 }
 
